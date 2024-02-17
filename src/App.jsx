@@ -1,8 +1,10 @@
+//import { config } from "dotenv";
+
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 var Api = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL: import.meta.env.VITE_BASE_URL,
 });
 
 function App() {
